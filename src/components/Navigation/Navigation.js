@@ -1,10 +1,13 @@
 import React from 'react';
+import styles from './Navigation.module.css';
 
 const Navigation = ({ items = [] }) => (
-  <ul>
+  <ul className={styles.list}>
     {items.map(item => (
       <li key={item}>
-        <a href="/">{item}</a>
+        <a className={styles.link} href="/">
+          {item}
+        </a>
       </li>
     ))}
   </ul>

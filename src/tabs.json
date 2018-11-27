@@ -1,0 +1,23 @@
+[
+  {
+    "label": "Tab 1",
+    "content": {
+      "title": "Nam pretium turpis",
+      "text": "Cras sagittis. In ut quam vitae odio lacinia tincidunt. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+    }
+  },
+  {
+    "label": "Tab 2",
+    "content": {
+      "title": "Donec interdum metus",
+      "text": "Nam commodo suscipit quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque posuere."
+    }
+  },
+  {
+    "label": "Tab 3",
+    "content": {
+      "title": "Phasellus viverra nulla",
+      "text": "Curabitur ligula sapien, tincidunt non, euismod vitae, posuere imperdiet, leo. Phasellus dolor. Proin viverra, ligula sit amet ultrices semper, ligula arcu tristique sapien, a accumsan nisi mauris ac eros."
+    }
+  }
+]

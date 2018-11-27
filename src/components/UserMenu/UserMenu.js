@@ -1,6 +1,7 @@
 import React, { Component, createRef } from 'react';
-import Dropdown from './Dropdown';
-import Avatar from './Avatar';
+import Dropdown from './Dropdown/Dropdown';
+import Avatar from '../Avatar/Avatar';
+import s from './UserMenu.module.css';
 
 export default class UserMenu extends Component {
   containerRef = createRef();
@@ -46,16 +47,14 @@ export default class UserMenu extends Component {
     const { isDropdownOpen } = this.state;
     const { name, avatar } = this.props;
 
-    console.log('RENDER');
-
     return (
       <div
+        className={s.container}
         onClick={this.openDropdown}
-        className="UserMenu"
         ref={this.containerRef}
       >
         <Avatar image={avatar} />
-        <span className="UserName">{name}</span>
+        <span className={s.name}>{name}</span>
         {isDropdownOpen && <Dropdown />}
       </div>
     );

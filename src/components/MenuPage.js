@@ -47,14 +47,7 @@ export default class MenuPage extends Component {
 
     return (
       <div>
-        <button type="button" onClick={this.handleAddMenuItem}>
-          Добавить элемент меню
-        </button>
-        <MenuGrid
-          items={menu}
-          onDelete={this.handleDeleteItem}
-          onShowMoreInfo={this.handleShowMoreInfo}
-        />
+        <MenuGrid items={menu} />
       </div>
     );
   }

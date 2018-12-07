@@ -11,7 +11,7 @@ const navItems = ['menu', 'about', 'contact', 'delivery'];
 const AppHeader = () => (
   <header className={s.header}>
     <div className={s.logo}>
-      <Logo image={appLogo} width={100} height={100} />
+      <Logo image={appLogo} width={80} height={80} />
     </div>
     <Navigation items={navItems} />
     <div className={s.usermenu}>

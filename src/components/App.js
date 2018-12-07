@@ -1,25 +1,10 @@
-import React, { Component } from 'react';
-import AppHeader from './AppHeader';
-import Modal from './Modal';
+import React from 'react';
+import AppHeader from './AppHeader/AppHeader';
 
-export default class App extends Component {
-  state = { isModalOpen: false };
+const App = () => (
+  <div>
+    <AppHeader />
+  </div>
+);
 
-  openModal = () => {
-    this.setState({ isModalOpen: true });
-  };
-
-  render() {
-    const { isModalOpen } = this.state;
-
-    return (
-      <div>
-        <AppHeader />
-        <button type="button" onClick={this.openModal}>
-          Open Modal
-        </button>
-        {isModalOpen && <Modal onClose={() => null} />}
-      </div>
-    );
-  }
-}
+export default App;
